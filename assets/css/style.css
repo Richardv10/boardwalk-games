@@ -27,7 +27,11 @@ h1, h2, h3 {
     font-family: var(--secondary-font)
 }
 
-/* temp styles*/
+/* Navbar styles */
+
+
+/*
+temp styles
 .container,
 .row {
     border: 2px solid black;
