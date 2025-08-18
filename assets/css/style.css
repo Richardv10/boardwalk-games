@@ -2,12 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Macondo&family=Oswald:wght@300&display=swap');
 
-/* CSS variables */
+/* Global CSS variables */
 
 :root {
     --primary-font: 'Inter', sans-serif;
     --secondary-font: 'Macondo', cursive;
-    --priumary-color: #416a8e;
+    --primary-color: #3a2620;
     --secondary-color: #aa9681;
     --highlight-color: #416a8e;
     --light-highlight-color: #7a9fc2;
@@ -15,7 +15,7 @@
 }
 
 .sub-heading-color {
-    color: var(--highlight-color)
+    color: var(--highlight-color);
 }
 
 
@@ -24,11 +24,33 @@ body {
 }
 
 h1, h2, h3 {
-    font-family: var(--secondary-font)
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
+    text-transform: uppercase;
 }
 
-/* Navbar styles */
+.section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
 
+/* navbar styles*/
+
+#navbar {
+    background-color: var(--primary-color);
+}
+#navbar .logo {
+    width: 30px;
+    height: auto;
+}
+
+/* header CSS */
+#header .logo {
+    font-family: var(--secondary-font);
+    } {
+
+}
+ 
 
 /*
 temp styles
@@ -41,3 +63,5 @@ temp styles
     border: 2px solid white;
     background-color: lightgray;
 }
+
+
