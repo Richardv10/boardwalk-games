@@ -25,7 +25,7 @@
 
 <body class="d-flex flex-column min-vh-100">
     <!-- Navigation -->
-    <nav id="navbar" class="navbar navbar-expand-lg" data-bs-theme="dark">
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="assets/images/logo-sm-white.png" alt="Boardwalk Games logo" class="logo">
@@ -219,12 +219,66 @@
         </section>
     </main>
 
+    <h2 class="display-6 text-center"> Reserve a Game</h2>
+
+     <section id="booking-form" class="container section">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8">
+                    <h2>Booking inquiry</h2>
+                    <form action="success.html" method="GET">
+                        <div class="row">
+                            <div class="col-12 col-lg-6 mb-3 col-xl-4">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input class="form-control" id="name" name="name" type="text" required>
+                            </div>
+                            <div class="col-12 col-lg-6 mb-3 col-xl-4">
+                                <label for="email" class="form-label">Email</label>
+                                <input class="form-control" id="email" name="email" type="email" required>
+                            </div>
+                            <div class="col-12 col-lg-6 mb-3 col-xl-4">
+                                <label for="phone" class="form-label">Phone number</label>
+                                <input class="form-control" id="phone" name="phone" type="number" required>
+                            </div>
+                            <div class="col-12 col-lg-6 mb-3">
+                                <label for="select-game" class="form-label">Select Game</label>
+                                <select id="select-game" class="form-select" name="select-game" required>
+                                    <option value="" selected>Select</option>
+                                    <option value="galaxy">Galaxy Pioneers</option>
+                                    <option value="woods">Mystic Woods</option>
+                                    <option value="gambit">Captains Gambit</option>
+                                    <option value="critter">Critter Quest</option>
+                                    <option value="catan">Settlers of Catan</option>
+                                    <option value="real-life">Monopoly</option>
+                                    <option value="wtf">Exploding Kittens</option>
+                                    <option value="cluedo">Cluedo</option>
+                                </select>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" rows="6" id="message" name="message" required></textarea>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn custom-button-filled">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+   
     <!-- footer / contact section -->
     <!-- mt-auto added to push footer to the bottom of the page -->
     
+        <footer id="contact" class="mt-auto">
         <div class="container section">
             <div class="row justify-content-center">
-                <div class="col-12 text-center">Contact us</div>
+                <div class="col-12 text-center"></div>
                 <!-- Contact info -->
                 <div class="col-12 col-md-6 col-xl-4">
                     <h3 class="sub-heading-color">Contact info</h3>
